@@ -1,26 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jared Weiss — Personal Website</title>
-  <meta name="description" content="Jared Weiss. IT and cybersecurity student. A home for my projects, links, and what I'm learning.">
-  <meta name="theme-color" content="#151515">
-  <meta property="og:title" content="Jared Weiss"><meta property="og:description" content="My projects, my links, and what I'm learning."><meta property="og:type" content="website">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=2">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jared Weiss — Projects & Links</title>
+  <meta name="description" content="Jared Weiss, IT and cybersecurity student. Explore my cloud security labs, side projects, and links.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:title" content="Jared Weiss — Projects & Links">
+  <meta property="og:description" content="Cloud security labs, side projects, and the places you can find me.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jared284.github.io/">
+  <link rel="canonical" href="https://jared284.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="shell">
-    <header><a class="wordmark" href="#">Jared Weiss</a><nav aria-label="Main navigation"><a href="#links">Links</a><a href="#projects">Projects</a><a href="#about">About</a></nav></header>
-    <main id="main">
-      <section class="hero" aria-labelledby="intro"><h1 id="intro">Jared Weiss</h1><p class="intro">IT and cybersecurity student.</p><p class="hero-note">My projects, profiles, and links in one place.</p></section>
-      <section id="links" class="links-section" aria-labelledby="links-title"><div class="section-heading"><div><h2 id="links-title">Links</h2></div></div><div id="link-list" class="link-list"></div></section>
-      <section id="projects" aria-labelledby="projects-title"><div class="section-heading"><div><h2 id="projects-title">Projects</h2></div><a class="text-link" href="https://github.com/Jared284/security-portfolio" target="_blank" rel="noopener noreferrer">Full portfolio <span aria-hidden="true">↗</span></a></div><div id="project-list" class="project-list"></div><p class="project-note">These are documented security labs in controlled environments. Each includes setup, evidence, and limitations.</p></section>
-      <section id="side-projects" aria-labelledby="side-projects-title"><div class="section-heading"><h2 id="side-projects-title">Side projects</h2></div><div id="side-project-list" class="project-list"></div><p class="project-note">Just for fun. The Death Star demo is currently private to my account.</p></section>
-      <section id="about" class="about" aria-labelledby="about-title"><div><h2 id="about-title">About</h2></div><div><p>I'm an IT and cybersecurity student interested in cloud security, detection engineering, identity and access, and application security.</p><a class="text-link" href="https://www.linkedin.com/in/jared-weiss12" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></section>
+  <div class="layout">
+    <aside class="profile" aria-label="Profile and navigation">
+      <div class="profile-top">
+        <p class="profile-kicker">Personal website</p>
+        <a href="#about" class="name-link"><h1>Jared Weiss<span class="sr-only"> home</span></h1></a>
+        <p class="profile-role">IT & cybersecurity student</p>
+        <p class="profile-bio">Exploring cloud security, detection, and access control through hands-on labs.</p>
+        <div class="profile-links" id="profile-links" aria-label="Social profiles"></div>
+      </div>
+      <nav class="section-nav" aria-label="On this page">
+        <a class="is-active" href="#about" aria-current="location"><span class="nav-line" aria-hidden="true"></span>About</a>
+        <a href="#projects"><span class="nav-line" aria-hidden="true"></span>Security labs</a>
+        <a href="#side-projects"><span class="nav-line" aria-hidden="true"></span>For fun</a>
+        <a href="#links"><span class="nav-line" aria-hidden="true"></span>Find me online</a>
+      </nav>
+      <div class="profile-bottom"><span>Learn. Build. Keep improving.</span><a href="https://github.com/Jared284/jared284.github.io" target="_blank" rel="noopener noreferrer">Website source <span aria-hidden="true">↗</span></a></div>
+    </aside>
+    <main class="main-content" id="main">
+      <section id="about" class="introduction" aria-labelledby="about-title">
+        <p class="eyebrow">A little about me</p>
+        <h2 id="about-title">Building skills.<br>Sharing the work.</h2>
+        <p>I'm an IT and cybersecurity student interested in cloud security, detection engineering, identity and access, and application security.</p>
+        <p class="intro-secondary">This is a home for my documented labs, things I make for fun, and the places you can find me.</p>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-header"><div><p class="section-label">01 / Selected work</p><h2 id="projects-title">Security labs</h2></div><a class="text-link" href="https://github.com/Jared284/security-portfolio" target="_blank" rel="noopener noreferrer">Full portfolio <span aria-hidden="true">↗</span></a></div>
+        <div id="project-list" class="featured-projects"></div>
+        <div id="more-project-list" class="compact-projects"></div>
+        <p class="section-note">Controlled lab environments. Each write-up includes setup, validation evidence, and known limitations.</p>
+      </section>
+      <section id="side-projects" aria-labelledby="side-projects-title">
+        <div class="section-header"><div><p class="section-label">02 / Outside the labs</p><h2 id="side-projects-title">Just for fun</h2></div></div>
+        <div id="side-project-list"></div>
+        <p class="section-note">The Death Star demo is currently private to my account.</p>
+      </section>
+      <section id="links" aria-labelledby="links-title">
+        <div class="section-header"><div><p class="section-label">03 / Keep in touch</p><h2 id="links-title">Find me online</h2></div></div>
+        <div id="link-list" class="destination-list"></div>
+      </section>
+      <footer class="site-footer"><span>Jared Weiss</span><div><button class="copy-link" id="copy-link" type="button">Copy website link <span aria-hidden="true">⧉</span></button><span class="copy-status sr-only" id="copy-status" role="status" aria-live="polite"></span></div></footer>
     </main>
-    <footer><span>Jared Weiss </span><a href="#">Back to top ↑</a></footer>
   </div>
-  <script src="content.js?v=3"></script><script src="site.js?v=3"></script>
-</body></html>
-
+  <script src="content.js?v=4"></script>
+  <script src="site.js?v=4"></script>
+</body>
+</html>
