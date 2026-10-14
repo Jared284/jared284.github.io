@@ -10,5 +10,17 @@ window.siteContent = {
     { title: 'IAM least privilege', description: 'A lab exploring over-permissioned access, scoped IAM policies, and allowed- and denied-action testing.', tags: ['IAM', 'Access control', 'AWS CLI'], path: '04-iam-least-privilege-hardening' },
     { title: 'API authorization', description: 'A serverless API lab investigating broken object-level authorization and backend ownership checks.', tags: ['API security', 'Lambda', 'BOLA'], path: '02-banking-api-security' },
     { title: 'SSH detection & response', description: 'A Linux lab using authentication logs, Fail2Ban, and custom logic to investigate SSH brute-force activity.', tags: ['Linux', 'Log analysis', 'Fail2Ban'], path: '01-ssh-bruteforce-detection' }
+  ],
+  sideProjects: [
+    {
+      "title": "Death Star · Sector 07",
+      "description": "A Star Wars-inspired browser game made for fun with AI assistance. Explore the Death Star and escape by shuttle.",
+      "tags": [
+        "Browser game",
+        "AI-assisted",
+        "Private demo"
+      ],
+      "url": "https://death-star-sector-07.tinycreek11.chatgpt.site"
+    }
   ]
 };
